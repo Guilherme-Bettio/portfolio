@@ -1,4 +1,4 @@
-# Portfólio & Perfil Profissional — Guilherme Landolfi Bettio
+# Perfil Profissional & Candidatura — Guilherme Landolfi Bettio
 
 **Estudante de Ciência da Computação (PUCPR) | Desenvolvedor de Software (Registro INPI) | Estagiário de Fabricação Digital (FabLab Cajuru)**
 
@@ -9,10 +9,10 @@
 
 ---
 
-## 🌐 LINKS RÁPIDOS DE ACESSO
-* 🖼️ **[Acessar Portfólio Web Interativo](https://guilherme-bettio.github.io/portfolio/)**
-* 📄 **[Acessar Currículo Web Interativo](https://guilherme-bettio.github.io/portfolio/curriculo.html)**
+## 📄 DOCUMENTOS DISPONÍVEIS PARA DOWNLOAD E VISUALIZAÇÃO
 
+* 📥 **[Baixar / Visualizar Currículo (PDF)](Curriculo_Guilherme_Landolfi_Bettio.pdf)**
+* 📥 **[Baixar / Visualizar Portfólio de Projetos (PDF)](Portfolio_Guilherme_Landolfi_Bettio.pdf)**
 
 ---
 
@@ -23,11 +23,10 @@ Sou graduando em Ciência da Computação pela PUCPR, apaixonado por tecnologia,
 ### 🌟 Principais Soft Skills:
 
 * 🗣️ **Comunicação Didática & Mentoria:** Experiência de 3 anos no ensino de lógica de programação, eletrônica e robótica. Habilidade para desmistificar conceitos complexos de forma clara, empática e acessível.
-* 🎯 **Foco em Resolução de Problemas (Problem Solving):** Mentalidade prática voltada a transformar desafios reais em ferramentas funcionais (como o rastreamento farmacêutico *PetFarma Pro* e pequenas automações em Python para os sistemas do FabLab).
+* 🎯 **Foco em Resolução de Problemas (Problem Solving):** Mentalidade prática voltada a transformar desafios reais em ferramentas funcionais (como o rastreamento farmacêutico *PetFarma Pro* e automações internas em Python para o FabLab).
 * 🤝 **Trabalho em Equipe & Colaboração Interdisciplinar:** Vivência em equipes multidisciplinares — atuando na convergência entre Tecnologia, Saúde (PIBITI), Ciências Sociais (*Moradia Primeiro*) e Comunidade Maker —, operando sob metodologias ágeis (Scrum).
 * 🚀 **Autonomia & Aprendizado Contínuo (Self-Learner / AI-First):** Proatividade para explorar novas tecnologias, incorporar inteligência artificial no fluxo de trabalho diário, testar ideias e evoluir rapidamente a cada ciclo.
 * 🔄 **Adaptabilidade & Resiliência:** Facilidade para transitar entre a escrita de código em Python/C/C++, prototipagem física, operação de máquinas de corte a laser e atendimento técnico.
-
 
 ---
 
@@ -36,7 +35,3 @@ Sou graduando em Ciência da Computação pela PUCPR, apaixonado por tecnologia,
 * **Automação & Dados:** Web Scraping, Automação de Processos (RPA), Leitura de QR Code, Google Apps Script.
 * **Inovação & Processo:** Registro de Software no INPI, Metodologias Ágeis (Scrum), Git/GitHub.
 * **Fabricação Digital & IoT:** Operação de Impressoras 3D (FDM/Resina), Cortadoras Laser CO2, Fresadoras CNC, ESP32 e Arduino.
-
----
-
-*Hospedado via GitHub Pages em [guilherme-bettio.github.io/portfolio](https://guilherme-bettio.github.io/portfolio/)*
