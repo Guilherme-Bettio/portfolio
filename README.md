@@ -12,8 +12,7 @@
 ## 🌐 LINKS RÁPIDOS DE ACESSO
 * 🖼️ **[Acessar Portfólio Web Interativo](https://guilherme-bettio.github.io/portfolio/)**
 * 📄 **[Acessar Currículo Web Interativo](https://guilherme-bettio.github.io/portfolio/curriculo.html)**
-* 📥 **[Download do Currículo em PDF](Curriculo_Guilherme_Landolfi_Bettio.pdf)**
-* 📥 **[Download do Portfólio em PDF](Portfolio_Guilherme_Landolfi_Bettio.pdf)**
+
 
 ---
 
