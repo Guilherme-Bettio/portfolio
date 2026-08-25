@@ -19,15 +19,16 @@
 
 ## 🧠 SOBRE MIM & SOFT SKILLS
 
-Sou graduando em Ciência da Computação pela PUCPR, apaixonado por tecnologia, automação e resolução prática de problemas. Minha trajetória combina desenvolvimento de software em nuvem (com registro oficial no INPI pelo projeto *PetFarma Pro*), mentoria em fabricação digital no FabLab da Rua da Cidadania do Cajuru e mais de 6 anos de atuação didática como professor de robótica no Espaço CMaker.
+Sou graduando em Ciência da Computação pela PUCPR, apaixonado por tecnologia, automação e resolução prática de problemas. Minha trajetória combina desenvolvimento de software em nuvem (com registro oficial no INPI pelo projeto *PetFarma Pro*), estágio em fabricação digital no FabLab Cajuru (operação de corte laser e automações internas em Python) e 3 anos de atuação prática como professor de robótica no Espaço CMaker.
 
 ### 🌟 Principais Soft Skills:
 
-* 🗣️ **Comunicação Didática & Mentoria:** Experiência consistente no ensino de lógica de programação, eletrônica e tecnologia para públicos diversos. Habilidade para desmistificar conceitos complexos de forma clara, empática e acessível.
-* 🎯 **Foco em Resolução de Problemas (Problem Solving):** Mentalidade prática voltada a transformar desafios reais em ferramentas funcionais, otimizando rotinas manuais e gerando impacto mensurável.
-* 🤝 **Trabalho em Equipe & Colaboração Interdisciplinar:** Vivência em equipes multidisciplinares — atuando na convergência entre Tecnologia, Saúde (PIBITI), Ciências Sociais (*Moradia Primeiro*) e Fabricação Digital Pública —, operando sob metodologias ágeis (Scrum).
+* 🗣️ **Comunicação Didática & Mentoria:** Experiência de 3 anos no ensino de lógica de programação, eletrônica e robótica. Habilidade para desmistificar conceitos complexos de forma clara, empática e acessível.
+* 🎯 **Foco em Resolução de Problemas (Problem Solving):** Mentalidade prática voltada a transformar desafios reais em ferramentas funcionais (como o rastreamento farmacêutico *PetFarma Pro* e pequenas automações em Python para os sistemas do FabLab).
+* 🤝 **Trabalho em Equipe & Colaboração Interdisciplinar:** Vivência em equipes multidisciplinares — atuando na convergência entre Tecnologia, Saúde (PIBITI), Ciências Sociais (*Moradia Primeiro*) e Comunidade Maker —, operando sob metodologias ágeis (Scrum).
 * 🚀 **Autonomia & Aprendizado Contínuo (Self-Learner / AI-First):** Proatividade para explorar novas tecnologias, incorporar inteligência artificial no fluxo de trabalho diário, testar ideias e evoluir rapidamente a cada ciclo.
-* 🔄 **Adaptabilidade & Resiliência:** Facilidade para transitar entre a escrita de código em Python/C/C++, prototipagem física (impressão 3D/corte laser), atendimento e mentoria técnica no FabLab.
+* 🔄 **Adaptabilidade & Resiliência:** Facilidade para transitar entre a escrita de código em Python/C/C++, prototipagem física, operação de máquinas de corte a laser e atendimento técnico.
+
 
 ---
 
