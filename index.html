@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Desenvolvimento - Guilherme Landolfi Bettio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a2a6c;
+            --secondary-color: #b21f1f;
+            --text-color: #2c3e50;
+            --bg-color: #f4f7f6;
+            --accent-color: #34495e;
+            --border-radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+        }
+
+        /* Sidebar Style */
+        .sidebar {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 40px 30px;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 25px;
+            object-fit: cover;
+            aspect-ratio: 1/1;
+        }
+
+        .sidebar-section {
+            margin-bottom: 35px;
+        }
+
+        .sidebar-section h3 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #e0e0e0;
+        }
+
+        .contact-info p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            word-break: break-all;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        /* Main Content Style */
+        .main-content {
+            padding: 40px 50px;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.3rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+
+        .header h2 {
+            font-size: 1.15rem;
+            color: var(--secondary-color);
+            font-weight: 400;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            page-break-after: avoid;
+            break-after: avoid;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+
+        .experience-header h4 {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+        }
+
+        .experience-company {
+            font-style: italic;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+            display: block;
+            font-weight: 600;
+        }
+
+        .experience-content ul {
+            list-style-type: none;
+        }
+
+        .experience-content li {
+            margin-bottom: 6px;
+            padding-left: 18px;
+            position: relative;
+            font-size: 0.95rem;
+            color: #34495e;
+        }
+
+        .experience-content li::before {
+            content: "•";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .tag-patent {
+            background: #e74c3c;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-left: 8px;
+        }
+
+        .tech-stack-text {
+            font-size: 0.88rem;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                padding: 30px;
+            }
+
+            .main-content {
+                padding: 30px;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background-color: white;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                grid-template-columns: 250px 1fr;
+            }
+
+            .sidebar {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="Perfil.jpeg" alt="Guilherme Landolfi Bettio" class="profile-img">
+
+            <div class="sidebar-section contact-info">
+                <h3>Contato</h3>
+                <p>📍 Curitiba, PR (Guabirotuba)</p>
+                <p>📞 +55 41 98745-8991</p>
+                <p>📧 guilherme.bettio@gmail.com</p>
+                <p>🔗 <a href="https://linkedin.com/in/guilherme-landolfi-bettio-69b075266/"
+                        style="color: white; text-decoration: none;" target="_blank">in/guilherme-landolfi-bettio</a></p>
+                <p>💻 <a href="https://github.com/Guilherme-Bettio"
+                        style="color: white; text-decoration: none;" target="_blank">github.com/Guilherme-Bettio</a></p>
+                <p>📄 <a href="curriculo.html"
+                        style="color: white; text-decoration: none;" target="_blank">Ver Currículo Web</a></p>
+
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Hard Skills</h3>
+                <ul class="skill-list">
+                    <li>Python 3</li>
+                    <li>C / C++</li>
+                    <li>Registro INPI</li>
+                    <li>Web Scraping Stealth</li>
+                    <li>Scrum</li>
+                    <li>Google Apps Script</li>
+                    <li>FabLab (3D & Laser)</li>
+                    <li>Arduino & ESP32</li>
+                    <li>RPA / PyPDF</li>
+                    <li>Linux & Docker</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Idiomas</h3>
+                <p style="font-size: 1.1rem;"><strong>Inglês:</strong></p>
+                <p>Escrita: intermediário</p>
+                <p>Leitura: avançado</p>
+                <p>Conversação: intermediário</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1>Guilherme Landolfi Bettio</h1>
+                <h2>Portfólio de Desenvolvimento de Software & Projetos</h2>
+            </header>
+
+
+            <!-- Seção 1 -->
+            <section class="section">
+                <h3 class="section-title">1. Software Registrado & Pesquisa (INPI)</h3>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>PetFarma Pro — Automação Farmacêutica via QR Code <span class="tag-patent">INPI</span></h4>
+                    </div>
+                    <span class="experience-company">Pesquisa e Desenvolvimento (PIBITI / PUCPR)</span>
+                    <div class="tech-stack-text">Stack: Google Apps Script, Cloud Database, QR Code Scanning, JavaScript, Scrum</div>
+                    <div class="experience-content">
+                        <p style="margin-bottom: 8px;">Solução completa para gestão de estoque e rastreabilidade de medicamentos veterinários em clínicas-escola, substituindo processos manuais por um fluxo digital em nuvem com leitura dinâmica de etiquetas QR Code.</p>
+                        <ul>
+                            <li><strong>Propriedade Intelectual:</strong> Outorga oficial da Carta de Registro de Software pelo INPI em 2025 (Processo BR512025003579-9).</li>
+                            <li><strong>Impacto Mensurável:</strong> Redução de mais de 70% no tempo de auditoria e checagem de prescrições clínicas.</li>
+                            <li><strong>Metodologia Ágil:</strong> Mapeamento direto de requisitos operacionais com stakeholders utilizando Scrum.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção 2 -->
+            <section class="section">
+                <h3 class="section-title">2. Automação, Scraping Stealth & RPA</h3>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Telegram Deal Hunter Bot — Scraper Stealth Evasivo</h4>
+                    </div>
+                    <span class="experience-company">Automação de Dados em Tempo Real</span>
+                    <div class="tech-stack-text">Stack: Python 3, Selenium / Playwright Stealth, Telegram Bot API, Regex</div>
+                    <div class="experience-content">
+                        <p style="margin-bottom: 8px;">Sistema automatizado em Python dedicado a monitorar em tempo real flutuações de preços de peças de tecnologia em e-commerces, superando bloqueios (Cloudflare, CAPTCHA e rate-limiting).</p>
+                        <ul>
+                            <li><strong>Técnicas Stealth:</strong> Spoofing de User-Agents, fingerprints dinâmicos e delays comportamentais aleatórios.</li>
+                            <li><strong>Filtros & Alertas:</strong> Algoritmo de filtragem por palavra-chave e limite de preço com notificação instantânea formatada no Telegram.</li>
+                            <li><strong>Resiliência:</strong> Rotina de pinging diário de integridade, logs de erro automatizados e autorrecuperação.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Document File Merger Automation — Pipeline RPA</h4>
+                    </div>
+                    <span class="experience-company">Processamento e Conversão de Documentos Multiformato</span>
+                    <div class="tech-stack-text">Stack: Python (PyPDF / python-docx / WeasyPrint), Shell Scripting, Markdown, HTML/CSS Print</div>
+                    <div class="experience-content">
+                        <p style="margin-bottom: 8px;">Ferramenta de processamento batch desenvolvida para unificar e compilar relatórios heterogêneos dispersos em PDF, DOCX, HTML e Markdown mantendo padronização visual e hierarquia documental.</p>
+                        <ul>
+                            <li><strong>Orquestração de Páginas:</strong> Estruturação automatizada de ordem (Capa -> Sumário -> Conteúdo -> Roteiro -> Apresentação).</li>
+                            <li><strong>Layout Print-Ready:</strong> Conversão com garantia de estilos CSS printáveis e limpeza de temporários pós-compilação.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção 3 -->
+            <section class="section">
+                <h3 class="section-title">3. Fabricação Digital, IoT & Prototipagem Maker</h3>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>FabLab Rua da Cidadania do Cajuru — Atuação Pública</h4>
+                    </div>
+                    <span class="experience-company">Estágio em Fabricação Digital (Prefeitura de Curitiba / Comunidade)</span>
+                    <div class="tech-stack-text">Stack: Impressão 3D (FDM / Resina), Corte a Laser CO2, Fresadora CNC, Mentoria Técnica</div>
+                    <div class="experience-content">
+                        <p style="margin-bottom: 8px;">Suporte técnico especializado na operação de equipamentos de prototipagem rápida e orientação a usuários em desenvolvimento de protótipos de impacto social e tecnológico.</p>
+                        <ul>
+                            <li>Assistência prática no ajuste de modelos CAD/CAM, parâmetros de fatiamento 3D e vetorização para corte a laser.</li>
+                            <li>Mentoria no desenvolvimento de invenções e protótipos físicos para empreendedores e comunidade.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Mão Robótica InMoov — Prótese Mecatrônica 3D</h4>
+                    </div>
+                    <span class="experience-company">Prototipagem Mecatrônica & Robótica</span>
+                    <div class="tech-stack-text">Stack: Modelagem/Impressão 3D, Arduino / ESP32, C/C++, Servomotores</div>
+                    <div class="experience-content">
+                        <p style="margin-bottom: 8px;">Construção e calibração de uma prótese funcional de mão robótica articulada impressa em 3D baseada no projeto open-source InMoov.</p>
+                        <ul>
+                            <li>Dimensionamento de circuitos de potência e controle microcontrolado de servomotores.</li>
+                            <li>Programação em C/C++ para acionamento articulado de garras e gestos programados.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Scanner 3D com Sensor Kinect (Xbox 360)</h4>
+                    </div>
+                    <span class="experience-company">Engenharia Reversa & Captura Tridimensional</span>
+                    <div class="tech-stack-text">Stack: Hardware Hack Kinect, Drivers Infravermelho, Malhas STL / OBJ</div>
+                    <div class="experience-content">
+                        <p style="margin-bottom: 8px;">Engenharia reversa e adaptação de sensor infravermelho de profundidade do Xbox 360 para criar um scanner tridimensional de baixo custo.</p>
+                        <ul>
+                            <li>Digitalização tridimensional de objetos físicos diretamente para arquivos mesh 3D utilizáveis em CAD e Impressão 3D.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Sistemas Embarcados & IoT CMaker (Espaço CMaker)</h4>
+                    </div>
+                    <span class="experience-company">Desenvolvimento IoT & Projetos Educacionais</span>
+                    <div class="tech-stack-text">Stack: ESP32, Arduino IDE, Sensores & Atuadores, Comunicação Sem Fio</div>
+                    <div class="experience-content">
+                        <p style="margin-bottom: 8px;">Desenvolvimento de ecossistemas de prototipagem IoT para aplicação em ambiente real e aulas didáticas:</p>
+                        <ul>
+                            <li><strong>Estufa Automática:</strong> Controle de temperatura, umidade e iluminação via sensores e ESP32.</li>
+                            <li><strong>Irrigador Inteligente:</strong> Leitura de umidade de solo com acionamento de relés e bombas hidráulicas.</li>
+                            <li><strong>Vending Machine Educacional:</strong> Liberação de itens via servomotores e teclado matricial.</li>
+                            <li><strong>Alerta de Incêndio Florestal:</strong> Rede de sensores de gás/fumaça e temperatura transmitindo alertas remotos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção 4 -->
+            <section class="section">
+                <h3 class="section-title">4. Infraestrutura & Otimização Desktop</h3>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Home Cluster de Microserviços</h4>
+                    </div>
+                    <span class="experience-company">DevOps & Infraestrutura Distribuída (Home Lab)</span>
+                    <div class="tech-stack-text">Stack: Linux (Debian / Ubuntu), Docker Swarm, Kubernetes, Proxies (Velocity / BungeeCord)</div>
+                    <div class="experience-content">
+                        <p style="margin-bottom: 8px;">Arquitetura de clusterização multi-node utilizando hardware sobressalente recondicionado para orquestração de containers e hospedagem de microserviços.</p>
+                        <ul>
+                            <li>Configuração de rede proxy de alta disponibilidade e gerenciamento de carga entre múltiplos nós físicos.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>GameFocus — Otimizador Desktop Windows</h4>
+                    </div>
+                    <span class="experience-company">Desenvolvimento de Aplicações Desktop Windows</span>
+                    <div class="tech-stack-text">Stack: Python, PyInstaller / InnoSetup, Windows API / Registry, UI Splash 3D</div>
+                    <div class="experience-content">
+                        <p style="margin-bottom: 8px;">Aplicação utilitária para otimização e preparação do sistema operacional Windows para execução ininterrupta de tarefas de alto desempenho.</p>
+                        <ul>
+                            <li>Criação de instalador customizado, interface de inicialização com splash 3D e proteção de processos críticos do sistema.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
