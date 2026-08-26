@@ -1,6 +1,6 @@
-# Perfil Profissional & Candidatura — Guilherme Landolfi Bettio
+# Documentos Profissionais — Guilherme Landolfi Bettio
 
-**Estudante de Ciência da Computação (PUCPR) | Desenvolvedor de Software (Registro INPI) | Estagiário de Fabricação Digital (FabLab Cajuru)**
+**Estudante de Ciência da Computação (PUCPR) | Desenvolvedor de Software (Registro INPI) | Estagiário no FabLab Cajuru**
 
 * 📍 **Localização:** Curitiba / PR (Guabirotuba)
 * 📧 **E-mail:** [guilherme.bettio@gmail.com](mailto:guilherme.bettio@gmail.com)
@@ -11,8 +11,9 @@
 
 ## 📄 DOCUMENTOS DISPONÍVEIS PARA DOWNLOAD E VISUALIZAÇÃO
 
-* 📥 **[Baixar / Visualizar Currículo (PDF)](Curriculo_Guilherme_Landolfi_Bettio.pdf)**
-* 📥 **[Baixar / Visualizar Portfólio de Projetos (PDF)](Portfolio_Guilherme_Landolfi_Bettio.pdf)**
+* 📄 **[Baixar / Visualizar Currículo (PDF)](Curriculo_Guilherme_Landolfi_Bettio.pdf)**
+* 🖼️ **[Baixar / Visualizar Portfólio de Projetos (PDF)](Portfolio_Guilherme_Landolfi_Bettio.pdf)**
+* 🎨 **[Baixar / Visualizar Coleção de Criações & Invenções (PDF)](Colecao_de_Criacoes_Guilherme_Landolfi_Bettio.pdf)**
 
 ---
 
